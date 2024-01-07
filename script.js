@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
         image.push(el);
       });
       mainImg = elements.id;
-      imageElement.setAttribute('src', `/essential/photos/${mainImg}.webp`);
+      imageElement.setAttribute('src', `./${mainImg}.webp`);
       content.appendChild(imageElement);
       content.appendChild(h2);
       imageElement.style.display = "none";
