@@ -1,0 +1,656 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+}
+body {
+  background-color: black;
+}
+.continer {
+  /* border: 2px red solid; */
+  display: flex;
+  margin: 2px;
+  list-style: none;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.left {
+  width: 25%;
+  margin: 0.5%;
+  /* border: 2px red solid; */
+}
+.right {
+  width: 75%;
+  background-color: rgb(29, 29, 29);
+  border-radius: 5px;
+  margin: 0.5%;
+  margin-left: 0;
+  height: 97vh;
+  /* border: 2px red solid; */
+}
+.home {
+  background-color: rgb(29, 29, 29);
+  border-radius: 5px;
+  padding-bottom: 10%;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+}
+
+.home ul li img {
+  width: 30px;
+  height: 30px;
+  padding-left: 15%;
+  filter: invert(100%);
+}
+.home ul li img:hover {
+  cursor: pointer;
+}
+.home div img:hover {
+  color: green;
+  cursor: pointer;
+}
+.home div img {
+  width: 10%;
+  padding: 7%;
+  filter: invert(100%);
+}
+.home ul li {
+  list-style: none;
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+  gap: 2em;
+}
+.library {
+  margin-top: 2%;
+  height: 62.5%;
+  border-radius: 5px;
+  background-color: rgb(29, 29, 29);
+}
+.library .heading img {
+  width: 11%;
+  filter: invert(100%);
+}
+.library .heading {
+  display: flex;
+  gap: 15px;
+  padding: 15%;
+}
+.library {
+  position: relative;
+  min-height: 50vh;
+  bottom-padding: 0%;
+}
+.footer div {
+  display: inline;
+  flex-direction: row;
+  color: grey;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+.log {
+  display: flex;
+  align-items: center;
+}
+a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 3%;
+  gap: 20px;
+}
+a:hover {
+  color: grey;
+  transition: ease-in-out;
+}
+.upper div,
+.lower div {
+  display: flex;
+  flex-direction: column;
+  font-size: 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.library .heading {
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+.upper .heading,
+.lower .heading {
+  padding-top: 10px;
+  padding-bottom: 2%;
+  background-color: #242424;
+  border-radius: 5px;
+  height: 16vh;
+  margin: 5px;
+}
+.lower .heading {
+  padding-top: 10px;
+  padding-bottom: 2%;
+  background-color: #242424;
+  border-radius: 5px;
+  height: 18vh;
+  margin: 5px;
+}
+img {
+  width: 30%;
+  height: 30%;
+}
+.creatplaylisit button {
+  width: 50%;
+  height: 25%;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  border-radius: 30px;
+}
+.creatplaylisit button:hover {
+  background-color: rgb(152, 150, 150);
+  color: white;
+  cursor: pointer;
+  transition: 200ms ease-in-out; /* Adjusted transition duration */
+}
+h1 {
+  font-size: rem;
+}
+.right .upper ul {
+  display: flex;
+  padding: 6% 0% 6% 6%;
+  font-size: large;
+  list-style: none;
+  flex-direction: row;
+  /* border: 2px red solid; */
+  gap: 1vh;
+}
+.right .upper {
+  gap: 38.5vw;
+}
+.right .upper ul .signin {
+  background-color: white;
+  color: black;
+  height: 7vh;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.right .upper .signin ul button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  background-color: white;
+  color: black;
+  width: 7vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 20px;
+}
+#signin {
+  background-color: transparent;
+  color: white;
+}
+#signin:hover {
+  color: black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+#signup:hover {
+  background-color: black;
+  color: white;
+}
+right .upper .signin ul li {
+  display: flex;
+  justify-content: center;
+}
+.right .upper {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(20, 20, 20);
+  min-height: 7%;
+}
+.main {
+  display: flex;
+
+  flex-direction: column;
+  > h2 {
+    padding: 3%;
+  }
+}
+.right .upper {
+  gap: 8.5vw;
+}
+.continer {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  margin: 2vh;
+  
+  background-color: #3f3f3f;
+  border-radius: 10px;
+  > h3 {
+   display: flex;
+  
+   justify-content: center;
+   padding-top: 3%;
+  }
+  > p {
+    min-width: 2vh;
+    min-height: 5vh;
+    font-size: 0.7rem;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-bottom: 4%;
+    bottom: 0;
+  }
+}
+.card:hover {
+  transition: 200ms ease-in-out;
+  background-color: #6d6d6d;
+}
+.card img {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  padding-top: 3%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+.card button {
+  position: absolute;
+  top: 52%;
+  left: 72%;
+  font-size: large;
+  background-color: transparent;
+  display: none;
+}
+.card button:hover {
+  scale: 2px;
+}
+.footer {
+  display: flex;
+  padding-top: 0;
+  justify-content: space-between;
+  position: absolute;
+  top: 89%;
+  margin-left: 20px;
+}
+/* For WebKit-based browsers (such as Chrome/Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333; /* Change the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666; /* Change the color of the scrollbar */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+}
+
+/* For Firefox */
+/* You might need to use "-moz-" prefix for older versions */
+/* These properties might need updating based on the browser version */
+scrollbar-width: thin;
+scrollbar-color: #34db34;
+
+/* For Microsoft Edge */
+/* These properties might need updating based on the browser version */
+-ms-overflow-style: none; /* Hides the default scrollbar */
+scrollbar-width: thin;
+scrollbar-color: #34db34;
+.audio {
+  padding-top: 2vh;
+}
+#seekSlider {
+  width: 70%;
+  margin-left: 20vh;
+  margin-top: 4vh;
+  color: #34db34;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
+  font-size: large;
+}
+#home,#serach{
+  font-size: 1.5rem;
+  padding-left: 8%;
+
+}
+#logo {
+  font-size: 3rem;
+  padding: 2%;
+ padding-left: 5%;
+ padding-right: 5%;
+}
+button {
+  border: none;
+  border-radius: 50%; /* Makes the buttons circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent; /* Transparent background for all buttons */
+  color: white; /* White icon color for all buttons */
+}
+
+#playBtn {
+  background-color: rgb(25, 215, 25); /* Green background for the play button */
+}
+/* Basic styling for the search bar */
+.search-bar,
+.search-bar input {
+  /* Adjust width as needed */
+  /* padding: 8px 10px; */
+  margin-top: 1.5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  border-radius: 20px;
+  outline: none;
+  min-width: 20vw;
+  background-color: #333; /* Background color for night theme */
+  color: #fff; /* Text color for night theme */
+}
+.search-bar input {
+  background-color: transparent;
+  margin: 0;
+  padding-left: 18px;
+  min-width: 20vw;
+  border: 1px solid #ccc;
+}
+
+/* Styling for placeholder text in the search bar */
+.search-bar::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+/* Styling for search icon inside the search bar */
+.search-bar::placeholder:before {
+  content: "\1F50D"; /* Unicode for search icon */
+}
+
+/* Styling for the search button */
+.search-button {
+  /* padding: 6px 3px; */
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  background-color: #444; /* Background color for button in night theme */
+  color: #fff; /* Text color for button in night theme */
+  cursor: pointer;
+}
+/* Define the animation */
+@keyframes exampleAnimation {
+  0% {
+    transform: scale(1);
+    /* position: absolute;
+    bottom: 72%; */
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the element */
+/* Define the animation */
+@keyframes fadeInAndMoveUp {
+  0% {
+    opacity: 0; /* Start with zero opacity */
+    transform: translateY(
+      23vh
+    ); /* Start from 23% of viewport height below its final position (73vh to 50vh) */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to its final position (50vh) */
+  }
+}
+
+/* Apply the animation to the element */
+#myElement {
+  animation-name: fadeInAndMoveUp;
+  animation-duration: 1s; /* Change this to match the duration of your animation */
+  animation-fill-mode: forwards; /* Keeps the final state of the animation */
+}
+.loader {
+  
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #34db34;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+  margin-top: 5vh;
+ /* Initially hidden */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.slide-up-fade-out {
+  background-color: lightblue;
+   visibility: 0;
+  /* transition: opacity 5s ease-out, transform 1s ease-out; */
+  animation: slideUpFadeOut 0.5s 1 ;
+}
+
+/* Keyframes for the animation */
+@keyframes slideUpFadeOut {
+  0% {
+    opacity: 0;
+  visibility: 0;
+  top: 90%;
+  }
+  25% {
+    visibility: 0;
+  }
+  50% {
+    visibility: 0.;
+  }
+  75% {
+    visibility: 0.;
+  }
+  100% {
+    visibility: 100;
+  }
+}
+/* Your existing CSS styles */
+
+
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  .search-bar, .search-bar input {
+    display: none;
+    min-width: 0px;
+  }
+  .upper{
+    gap:80px;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  .right{
+    width: 100vw;
+    height: 100vh;
+  }
+  /* Adjust the roundness and color of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 3px;
+  }
+
+  .continer {
+    /* Adjust container styles for mobile */
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right .upper .signin ul{
+    padding-left: 7vw;
+    gap: 7vw;
+  }
+  .right .upper .signin ul button{
+    height: 3vh ;
+    width: 17vw ;
+    
+  }
+  .left {
+    /* Adjust left section styles for mobile */
+    display: none;
+  }
+
+  .right {
+    /* Adjust right section styles for mobile */
+    width: 100vw;
+    height: auto;
+  }
+  .continer{
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    justify-content: center;
+  margin-left: 25vw;
+    width: 55vw;
+    > h2,p{
+      display: flex;
+      justify-self: center;
+      justify-content: center;
+    }
+    >p {
+      padding: 0;
+
+    }
+  }
+
+  input#seekSlider{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-left: vw;
+    margin-top: 7vh;
+    margin-left: 17vw;
+  }
+  .controls{
+    margin-left: 10vw;
+
+    display: flex;
+    justify-content: center;
+  }
+  /* Add more styles as needed for mobile */
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .continer {
+    /* Adjust container styles for tablets */
+    flex-direction: row;
+    justify-content: center;
+  }
+  .right .upper {
+    gap: 4.5vw;
+}
+  .card{
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    margin: 2vw;
+  }
+  .content{
+    padding: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .left {
+    /* Adjust left section styles for tablets */
+    width: 28.2%;
+  }
+  #seekSlider {
+    width: 70%;
+    margin-left: 13vw;
+    margin-top: 4vh;
+    color: #34db34;
+}
+.custom-controls{
+  padding-top:3vh ;
+}
+  .right {
+    /* Adjust right section styles for tablets */
+    width: 70%;
+    height: 100vh;
+  }
+  .search-bar input{
+    width: 110%;
+    background-color: #434343;
+  }
+
+  /* Add more styles as needed for tablets */
+}
+.mediaquire{
+  display: flex;
+  max-height: 30vh !important;
+  min-width: 30vw!important;
+  margin-right: 10vw !important;
+  margin-top: 15vh !important;
+  overflow: hidden !important;
+  width: 25vw !important ;
+  margin-left: -10vw !important;
+  border-radius: 20px !important;
+  height: 50vh!important;
+
+}
+.mediaquire2{ 
+  display: none !important;
+  width: 57vw !important;
+  margin-left: 23vw !important;
+  border-radius: 20px !important;
+  height: 9vh !important;
+}
+
+

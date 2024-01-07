@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/f1950bb246.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/essential/photos/Spotify_icon.svg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="continer">
+      <div class="left">
+        <div class="home">
+          <div class="log">
+            <span id="logo"><i class="fa-brands fa-spotify"></i></span>
+            <h2>Spotify</h2>
+          </div>
+          <ul>
+            <li><span id="home"><i class="fa-solid fa-house"></i></span>Home</li>
+            <li><span id = "serach"><i class="fa-solid fa-magnifying-glass"></i></span>Search</li>
+          </ul>
+        </div>
+        <div class="library">
+          <div class="heading">
+            <img src="library.svg" alt="" />
+            <h2>Library</h2>
+          </div>
+          <div class="creatplaylisit" id="playlist">
+            <div class="upper">
+              <div class="heading">
+                <h1>Create your first playlist</h1>
+                <p>it is easy we will help you</p>
+                <button id="createPlaylistUpper">Create playlist</button>
+              </div>
+            </div>
+            <div class="lower">
+              <div class="heading">
+                <h1>Let's find some podcasts to follow</h1>
+                <p>We'll keep you updated on new episodes</p>
+                <button id="createPlaylistLower">Listen podcast</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/" id=""
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/" id=""
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/" id=""
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/" id=""
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                id=""
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/" id=""
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="upper">
+          <div class="left">
+            <ul>
+              <li id="previous-button"><i class="fa-solid fa-chevron-left"></i></li>
+              <li id="previous-button"><i class="fas fa-chevron-right"></i></i></li>
+            </ul>
+          </div>
+          <div class="search-bar ">
+          <input type="text" name="" id="" placeholder="Search your song">
+          </div>
+          <div class="signin">
+            <ul>
+              <li><button id ="signin">Sign in</button></li>
+              <li><button id ="signup ">Sign up</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main">
+          <h2>Spotify Playlist</h2>
+          <div class="content">
+            <div class="contianer">
+              <div class="card" id="arijit" >
+              <button id="cardbtn" class="temp"><svg class="svg-img" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 iYxpxA" style="width: 48px; height: 48px; fill: #1DB954;">
+                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                <path d="M8 5.18v13.64L18.36 12 8 5.18z" fill="#000" />
+              </svg></button>
+              <img src="/essential/photos/arijit.webp" alt="" class="card-image">
+              <h3>Arijit  Top Hits</h3>
+              <p>Arijit  is on top of the love 50!</p>
+            </div>
+            </div>
+            <div class="contianer" >
+              <div class="card" id="ap">
+              <button id="cardbtn" class="temp"><svg class="svg-img" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 iYxpxA" style="width: 48px; height: 48px; fill: #1DB954;">
+                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                <path d="M8 5.18v13.64L18.36 12 8 5.18z" fill="#000" />
+              </svg></button>
+              <img src="/essential/photos/ap.webp" alt="">
+              <h3>Ap  Top Hits</h3>
+              <p>Ap is on top of the Hottest 50!</p>
+            </div>
+            </div>
+            <div class="contianer" >
+              <div class="card" id="rahat">
+              <button id="cardbtn" class="temp"><svg class="svg-img" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 iYxpxA" style="width: 48px; height: 48px; fill: #1DB954;">
+                <circle cx="12" cy="12" r="11" fill="#1DB954" />
+                <path d="M8 5.18v13.64L18.36 12 8 5.18z" fill="#000" />
+              </svg></button>
+              <img src="/essential/photos/rahat.webp" alt="" id="main-image">
+              <h3>Rahat Top Hits</h3>
+              <p>Rahat  is on top of the love 50!</p>
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="player">
+            <audio id="customAudio">
+              <source id="#source1" src="/essential/music/">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="custom-controls">
+              <input type="range" id="seekSlider" min="0" step="1" style="height: 2px;">
+              <div class="controls">
+                <button id="seekBackward"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="playBtn"><i class="fa-solid fa-play"></i></button>
+                <button id="seekForward"><i class="fa-solid fa-angle-right"></i></button>
+              </div>
+              
+            </div>
+            
+          </div>
+        <div class="footer">
+          <div class="r-footer-clm flex-clm">
+            <h3>Company</h3>
+            <a href="">About</a>
+            <a href="">Jobs</a>
+            <a href="">For the record </a>
+           </div>
+           <div class="r-footer-clm flex-clm">
+            <h3>Communities</h3>
+            <a href="">For Artists</a>
+            <a href="">Developers</a>
+            <a href="">Advertising</a>
+            <a href="">Investers</a>
+            <a href="">Vendors</a>
+           </div>
+           <div class="r-footer-clm flex-clm">
+            <h3>Useful links</h3>
+            <a href="">Support</a>
+            <a href="">Free Mobile App</a>
+           </div>
+  </div>
+  <div class="copyright"></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
